@@ -1,0 +1,51 @@
+{% extends 'site/index.html' %}
+{%load static%}
+
+
+<!--Block content goes below-->
+{% block content %}
+
+
+<div class="container my-5 py-5 z-depth-1">
+
+
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center">
+
+        <!--Grid column-->
+        <div class="col-lg-8 text-center">
+
+          <h3 class="font-weight-bold mb-4">The goal of super-resolution is to take a low resolution (LR)
+            image and upsampling factor and generate a corresponding high
+            resolution (HR) version.</h3>
+
+          <!--Image-->
+          <div class="view overlay z-depth-1-half">
+            <img src="{%static 'img/deep/super.jpg'%}" class="img-fluid"
+              alt="">
+            <a href="">
+              <div class="mask rgba-white-light"></div>
+            </a>
+          </div>
+
+        </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
+
+
+
+
+
+        {% endblock %}

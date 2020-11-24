@@ -1,0 +1,48 @@
+{% extends 'site/index.html' %}
+{%load static%}
+
+
+<!--Block content goes below-->
+{% block content %}
+
+
+<div class="container my-5 py-5 z-depth-1">
+
+
+    <!--Section: Content-->
+    <section class="px-md-5 mx-md-5 text-center text-lg-left dark-grey-text">
+
+      <!--Grid row-->
+      <div class="row d-flex justify-content-center ">
+          <!--Grid column-->
+          <div class="col-lg-8 text-center">
+
+        <h3 class="font-weight-bold mb-4">In image inpainting, one is given an image  with missing pixels in correspondence of a binary mask the goal is to reconstruct the missing data.</h3>
+
+        <!--Image-->
+        <div class="view overlay z-depth-1-half">
+          <img src="{%static 'img/deep/inpainting.jpg'%}" class="img-fluid"
+            alt="">
+          <a href="">
+            <div class="mask rgba-white-light"></div>
+          </a>
+        </div>
+
+      </div>
+        <!--Grid column-->
+
+      </div>
+      <!--Grid row-->
+
+
+    </section>
+    <!--Section: Content-->
+
+
+  </div>
+
+
+
+
+
+        {% endblock %}
